@@ -1,0 +1,12 @@
+{
+    "name": "makmonty/movac",
+    "version": "0.0.1",
+    "description": "Movac web framework",
+    "require": {
+        "phpmailer/phpmailer": "^5.2",
+        "google/recaptcha": "^1.1",
+        "makmonty/movac-mvc": "^0.0.1",
+        "makmonty/movac-sessions": "^0.0.1"
+    },
+    "license": "MIT"
+}
