@@ -13,4 +13,4 @@ Plugin::activate("jquery");
 Plugin::activate("bootstrap_theme_yeti");
 
 $dispatcher = new Dispatcher();
-$dispatcher->run($_SERVER['REQUEST_URI']);
+$dispatcher->run(substr($_SERVER['REQUEST_URI'], 1));
