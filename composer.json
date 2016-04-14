@@ -1,6 +1,6 @@
 {
     "name": "makmonty/movac",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Movac web framework",
     "require": {
         "phpmailer/phpmailer": "^5.2",
