@@ -6,10 +6,10 @@ class Plugin {
 	private static $active = array();
 	private static $baseDir = "";
 
-	public static function activate($name) {
+	public static function activate($name, $path = "") {
 		if(!in_array($name, self::$active)) {
 			self::$active[] = $name;
-			self::initPlugin($name);
+			self::initPlugin($name, $path);
 		}
 	}
 
@@ -22,11 +22,11 @@ class Plugin {
 	}
 
 	public static function getBaseDir() {
-		return self::$baseDir != "" ? self::$baseDir : BASE_DIR;
+		return self::$baseDir != "" ? self::$baseDir : dirname($_SERVER["SCRIPT_FILENAME"]) . "/plugins/";
 	}
 
-	private static function initPlugin($name, $location = "") {
-		$location = $location != "" ? $location : self::getBaseDir() . "plugins/" . $name;
+	private static function initPlugin($name, $path = "") {
+		$location = $path != "" ? $path : self::getBaseDir() . $name;
 		require_once($location . "/init.php");
 	}
 }

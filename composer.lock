@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b4ba5bc1dc6a9994e433c9fbe58bf71d",
-    "content-hash": "557fb08201dcce045c61d9833da9fe2d",
+    "hash": "02eab85090ea1a94c22aec62f2f0fa24",
+    "content-hash": "4aadc3310a472ff15bd9731aba6f0dd7",
     "packages": [
         {
             "name": "google/recaptcha",
@@ -54,16 +54,16 @@
         },
         {
             "name": "makmonty/movac-mvc",
-            "version": "0.0.1",
+            "version": "0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/makmonty/movac-mvc.git",
-                "reference": "46ca836c3f969184a407b2feed4a9008a40c6aed"
+                "reference": "62c6ea09fdb6cb185975f01ca754ba0fe0366b2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/makmonty/movac-mvc/zipball/46ca836c3f969184a407b2feed4a9008a40c6aed",
-                "reference": "46ca836c3f969184a407b2feed4a9008a40c6aed",
+                "url": "https://api.github.com/repos/makmonty/movac-mvc/zipball/62c6ea09fdb6cb185975f01ca754ba0fe0366b2d",
+                "reference": "62c6ea09fdb6cb185975f01ca754ba0fe0366b2d",
                 "shasum": ""
             },
             "require": {
@@ -80,24 +80,24 @@
                 }
             ],
             "description": "MVC plugin for Movac framework",
-            "time": "2016-04-14 19:15:28"
+            "time": "2016-04-14 22:14:54"
         },
         {
             "name": "makmonty/movac-sessions",
-            "version": "v0.0.1",
+            "version": "v0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/makmonty/movac-sessions.git",
-                "reference": "6289bd11c82375cc916c812ca8f96f8b4ff47fa0"
+                "reference": "cc6534598b968b827642bcbe5ddc5c4776fb7000"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/makmonty/movac-sessions/zipball/6289bd11c82375cc916c812ca8f96f8b4ff47fa0",
-                "reference": "6289bd11c82375cc916c812ca8f96f8b4ff47fa0",
+                "url": "https://api.github.com/repos/makmonty/movac-sessions/zipball/cc6534598b968b827642bcbe5ddc5c4776fb7000",
+                "reference": "cc6534598b968b827642bcbe5ddc5c4776fb7000",
                 "shasum": ""
             },
             "require": {
-                "makmonty/movac-mvc": "^0.0.1"
+                "makmonty/movac-mvc": "^0.0.2"
             },
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
@@ -105,7 +105,7 @@
                 "MIT"
             ],
             "description": "User sessions plugin for Movac framework",
-            "time": "2016-04-14 19:20:23"
+            "time": "2016-04-14 22:17:40"
         },
         {
             "name": "phpmailer/phpmailer",
