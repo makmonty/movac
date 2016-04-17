@@ -242,12 +242,10 @@ class Controller {
 	}
 
 	function redirect($url, $permanent = false) {
-		$remote = !!strpos($url, "://");
-		$address = ($remote)? $url : ROOT.$url;
 		if($permanent)
-			header("Location: ". $address, true, 301);
+			header("Location: ". $url, true, 301);
 		else
-			header("Location: ". $address);
+			header("Location: ". $url);
 		exit;
 	}
 
