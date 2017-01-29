@@ -70,12 +70,12 @@ class Router {
     $this->runFilters($c, $action, $params, $c->beforeFilters, $c->skipBeforeFilters);
 
     if(count($c->aroundFilters) == 0) {
-      call_user_method_array($action, $c, $params);
+      call_user_func_array(array($c, $action), $params);
     } else {
       $count = $this->runFilters($c, $action, $params, $c->aroundFilters, $c->skipAroundFilters);
 
       if(!$count) {
-        call_user_method_array($action, $c, $params);
+        call_user_func_array(array($c, $action), $params);
       }
     }
 
@@ -95,7 +95,7 @@ class Router {
       }
 
       if($runFilter) {
-        call_user_method_array($filter, $controller, $params);
+        call_user_func_array(array($controller, $filter), $params);
         $count++;
       }
     }
